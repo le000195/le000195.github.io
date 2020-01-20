@@ -20,27 +20,27 @@
 		<!-- div tag does not follow the semantic rendering, therefore it can be a parent or child of any tag except inline tags and p tag -->
 		<!-- div tag is an example of block level element -->
 		<!-- A block level element takes entire width on a page and pushes the next tag to next line when rendering -->
-		<h2>This is the main Section</h2>
-		<div>
-			I am a div
-		</div>
-		<p>I am a paragraph</p>
-		<p>This paragraph has a <br>Break</p>
+		<section>
+			<h2>This is the main Section</h2>
+			<div>
+				I am a div
+			</div>
+			<p>I am a paragraph</p>
+			<p>This paragraph has a <br>Break</p>
+		</section>		
 
-		<!-- section tag is HTML5 semantic tag that is used to specfiy varous secttions in a HTML body -->
-		<!-- Section tag simliar to header and nav tag is just a container and its content is called section content -->
 		<section>
 			<!-- article tag is used to create the content/text for HTML document -->
 			<!-- Note: article tag as any other semantic tag is also know as structural element -->
 			<h3>This is a section</h2>
 			<article>
-				This is important part of the section
+				<header>This is important part of the section</header>
 			</article>
 			<!-- aside tag is another structural/semantic element that is used to create less important text information for a page -->
 			<aside>
-				This is less important part of the section
+				<header>This is less important part of the section</header>
 			</aside>
-			<aside>
+			<div>
 				<h4>Some links in a Div</h4>
 				<nav>
 					<!-- side list 1 -->
@@ -63,7 +63,7 @@
 						</ol>
 					
 				
-			</aside>
+			</div>
 		</section>
 	</main>
 	
