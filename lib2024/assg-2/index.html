@@ -6,67 +6,50 @@
 	<meta name="keywords" content="HTML, HTML5, Assignment 2, New Tags, Special Tags">
 </head>
 <body>
-	<!-- id is an atrribute of an element for its unique identifcation -->
 	<header id="header">
 		<h1>Assignment 2</h1>
 		<section id="table-section" class="main-section">
 		 		<h2>Employee List</h2>
                 <table border="1">
-                    <!-- thead tag defines the heading of the table -->
                     <thead>
-                        <!-- tr is the table row tag. We add one tr for each row.-->
                         <tr>
-                            <!-- th tag is used in used in thead tag to define heading of a column in a table -->
                             <th>Id</th>
                             <th>Name</th>
                             <th>email</th>                            
                         </tr>
                     </thead>
-                    <!-- tbody tag is for defining the body of the table all the content rows are contained in tbody -->
-                    <tbody>
-                        <!-- Same as in thead a tr tag is used to define a table row-->
-                        <tr>
-                            <!-- td tags are used for adding content to the columns -->
+                   
+                    <tbody>                        
+                        <tr>                            
                             <td>1</td>
                             <td>John</td>
                             <td>john@fakemail.com</td>
                         </tr>
-                        <!-- We can have multiple rows of content in the body-->
                         <tr>
-                            <!-- The number of td remains the same as number of columns -->
                             <td >2</td>
                             <td>sam</td>
                             <td>sam@fakemail.com</td>
                         </tr>
                         <tr>
-                            <!-- The number of td remains the same as number of columns -->
                             <td>1</td>
                             <td>Bob</td>
                             <td>bob@fakemail.com</td>
                         </tr>
                         <tr>
-                            <!-- The number of td remains the same as number of columns -->
                             <td>1</td>
                             <td>Jack</td>
                             <td>jack@fakemail.com</td>                            
                         </tr>
                          <tr>
-                            <!-- The number of td remains the same as number of columns -->
                             <td>1</td>
                             <td>rob</td>
                             <td>Rob@fakemail.com</td>
                         </tr>
                     </tbody>
-                    <!-- tfoot is used to add extra information about the table and is of least importance -->
+                   
                     <tfoot>
                         <tr>
-                            <!-- 
-                            colspan is used to change the width of a column and making it expand multiple columns 
-                            Example below will make the single column cell td to expand and take over 2 columns space
-                            -->
-                            <td colspan="4">
-                                All of the above are Division Heads
-                            </td>
+                            <td colspan="4">All of the above are Division Heads</td>
                         </tr>
                     </tfoot>
                 </table>
