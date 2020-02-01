@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+	<!-- meta keywords is considered the most important tag for SEO  -->
+	<meta name="keywords" content="HTML, HTML5, Assignment 2, New Tags, Special Tags">
+</head>
+<body>
+	<!-- id is an atrribute of an element for its unique identifcation -->
+	<header id="header">
+		<h1>Assignment 2</h1>
+		<section id="table-section" class="main-section">
+		 		<h2>Employee List</h2>
+                <table border="1">
+                    <!-- thead tag defines the heading of the table -->
+                    <thead>
+                        <!-- tr is the table row tag. We add one tr for each row.-->
+                        <tr>
+                            <!-- th tag is used in used in thead tag to define heading of a column in a table -->
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>email</th>                            
+                        </tr>
+                    </thead>
+                    <!-- tbody tag is for defining the body of the table all the content rows are contained in tbody -->
+                    <tbody>
+                        <!-- Same as in thead a tr tag is used to define a table row-->
+                        <tr>
+                            <!-- td tags are used for adding content to the columns -->
+                            <td>1</td>
+                            <td>John</td>
+                            <td>john@fakemail.com</td>
+                        </tr>
+                        <!-- We can have multiple rows of content in the body-->
+                        <tr>
+                            <!-- The number of td remains the same as number of columns -->
+                            <td >2</td>
+                            <td>sam</td>
+                            <td>sam@fakemail.com</td>
+                        </tr>
+                        <tr>
+                            <!-- The number of td remains the same as number of columns -->
+                            <td>1</td>
+                            <td>Bob</td>
+                            <td>bob@fakemail.com</td>
+                        </tr>
+                        <tr>
+                            <!-- The number of td remains the same as number of columns -->
+                            <td>1</td>
+                            <td>Jack</td>
+                            <td>jack@fakemail.com</td>                            
+                        </tr>
+                         <tr>
+                            <!-- The number of td remains the same as number of columns -->
+                            <td>1</td>
+                            <td>rob</td>
+                            <td>Rob@fakemail.com</td>
+                        </tr>
+                    </tbody>
+                    <!-- tfoot is used to add extra information about the table and is of least importance -->
+                    <tfoot>
+                        <tr>
+                            <!-- 
+                            colspan is used to change the width of a column and making it expand multiple columns 
+                            Example below will make the single column cell td to expand and take over 2 columns space
+                            -->
+                            <td colspan="4">
+                                All of the above are Division Heads
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+	</header>
+	
+	<main id="main">
+		<section id="images" class="main-section">
+			<h2>Animals</h2>
+			<article>
+				<!--  img tag is used to create image on a document-->
+				<!-- src is the attribute of img element that is used to specificy the location of the image that you want to render on the page -->
+				<!-- "img" is a direct sibling folder of index.html   -->
+				<!-- To access the content of "img" folder we use "/" -->
+				<!-- to specify the image we use "image-1" (name of the image file) -->
+				<!-- .jpg represents the extention or file type of that image -->
+				<!-- width attribute is used to specify the width of your rendered image, 300 means 300 pixels of the screen -->
+				<!-- height attribute is used to specifiy the height of youur rendered image. 200 menas 200 pixels of the screen -->
+				<!-- img is an example of inline element -->
+				<!-- figure is an semantic tag used to display images -->
+				<!-- figure has figcaption child which is used to give proper captions to images -->
+				<figure>
+					<img src="img/elephant.jpg" alt="image elephant in figure" width="300" height="200">
+					<figcaption>This is an Elephant.</figcaption>
+				</figure>
+				<figure>
+					<img src="img/lion.jpg" alt="image lion in figure" width="300" height="200">
+					<figcaption>This is a lion.</figcaption>
+				</figure>
+				<figure>
+					<img src="img/snake.jpg" alt="image snake in figure" width="300" height="200">
+					<figcaption>This is a snake.</figcaption>
+				</figure>
+				<figure>
+					<img src="img/whale.jpg" alt="image whale in figure" width="300" height="200">
+					<figcaption>This is a Whale.</figcaption>
+				</figure>
+				<figure>
+					<img src="img/hawk.jpg" alt="image whale in figure" width="300" height="200">
+					<figcaption>This is a Hawk.</figcaption>
+				</figure>
+			</article>
+		</section> 
+
+        <section>
+            	<h2>HTML Entities</h2>
+            	<article>
+            		<p>Non Breaking Space: &nbsp;</p>
+            		<p>ampersand : &amp; </p>
+            		<p>Pound : &#163;</p>
+            		<p>Copyright : &copy;</p>
+            	</article>
+        </section>     
+
+        <section id="special-tags" class="main-section">
+            	<h2>Special Tags</h2>
+            	<article id="st-dl" class="special-tag">
+            		<!-- <dl> tag is used to create description list -->
+            		<dl> 
+            			<!-- dt is for the Term  -->
+            			<dt>Coffee</dt> 
+            			<!-- dd is for the description -->
+            			<dd>- black hot drink</dd> 
+    					<dt>Milk</dt> 
+    					<dd>- white cold drink</dd>     					
+    				</dl>
+            	</article>
+            	<article id="st-abbr" class="special-tag">
+            		<!--  <abbr > tag is used for indicating an ABBREVATION -->
+            		<p><abbr  title="Hypertext Markup Language">HTML</abbr ></p>
+            		<p><abbr  title="Cascading Style Sheets">CSS</abbr></p>
+
+            	</article>
+
+            	<article class="special-tag" id="details">
+            		<!-- The <details> tag contains additional details, that the user can open and view.  -->
+            		<!-- The <details> tag comes in pairs, the content is written between the opening (<details>) and the closing (</details>) tags. -->
+					<details> 
+				       <summary>What is a mobile Phone?</summary>
+				       <p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
+					</details>
+				</article>
+        </section>
+
+        <section id="hidden-comments" class="main-section">
+            	<h2>Hidden comment:</h2>
+            	<p hidden>This paragraph should be hidden.</p>
+        </section>
+
+	</main>	
+</body>
+</html>
