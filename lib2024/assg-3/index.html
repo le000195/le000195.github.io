@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="html-forms" class="main-section">
+			<form action="somepage.php" method="get">
+				<!-- First Name (text) and Last Name (text)-->
+				<div id="fn-container" class="form-elm">
+					<label for="FirstName">First name:&nbsp</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here" required>&emsp;
+					<label for="LastName">Last Name:&nbsp</label>
+					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here" required><br><br>
+				</div>
+				<!-- Last Name (text) -->
+				<div id="ln-container" class="form-elm">
+					<label for="LastName">Last Name:&nbsp</label>
+					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here" required><br><br>
+				</div>
+				<!-- Email Id (email) -->
+				<div id="email-container" class="form-elm">
+					<label for="email">Email Id:&nbsp</label>
+					<input type="email" name="email" id="email" placeholder="Enter your email here" required><br><br>
+				</div>
+				<!-- Password -->
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password:&nbsp</label>
+					<input type="password" name="pass" id="pass" required><br><br>
+				</div>
+				<!-- Introductory Text (Text area) -->
+				<div id="sum-container" class="form-elm">
+					<label for="summary">Introductory Text:&nbsp</label>
+					<textarea name="summary" id="summary" placeholder="Enter introduction here"> 
+						This is the value of introductory text
+					</textarea><br><br>
+				</div>
+				<!-- Date of Birth (Date) -->
+				<div id="dob-container" class="form-elm">
+					<label for="dob">Date of Birth:&nbsp</label>
+					<input type="date" name="dob" id="dob" required>
+				</div>				
+				<!-- Mobile Number  (Number) -->
+				<div id="mobile-container" class="form-elm">
+					<label for="mobi">Mobile Number:&nbsp</label>
+					<input type="number" name="mobi" id="mobi">
+				</div>
+				<!-- Gender (Radio) -->
+				<div id="gender-container" class="form-elm">
+					<label for="yes">Gender:&nbsp
+						<input type="radio" name="gender" id="yes" value="yes" checked>
+						Yes
+					</label>
+					<label>
+						<input type="radio" name="gender" id="no" value="no">
+						No
+					</label>
+				</div>
+				<!-- Address (Text) -->
+				<div id="addr-container" class="form-elm">
+					<label for="addr">Address:&nbsp</label>
+					<input type="text" name="addr" id="addr" placeholder="Enter your address here">
+				</div>
+				<!-- City (Text) -->
+				<div id="city-container" class="form-elm">
+					<label for="city">City:&nbsp</label>
+					<input type="text" name="city" id="city" placeholder="Enter your city here">
+				</div>
+				<!-- Province (Drop-down) -->				
+				<div id="prov-drop-container" class="form-elm">
+					<label for="prov">Province:&nbsp</label>
+					<select name="prov" id="prov">
+						<option value="ab">Alberta</option>
+						<option value="bc">British Columbia</option>
+						<option value="mb">Manitoba</option>
+						<option value="nb">New Brunswick</option>
+						<option value="nl">Newfoundland and Labrador</option>
+						<option value="ns">Nova Scotia</option>
+						<option value="on" selected>Ontario</option>
+						<option value="pe">Prince Edward Island</option>
+						<option value="qc">Quebec</option>
+						<option value="sk">Saskatchewan</option>
+						<option value="ot">Other provinces</option>
+					</select>
+				</div>
+				<!-- Country (Drop-down) -->			
+				<div id="ctry-drop-container" class="form-elm">
+					<label for="ctry">Country:&nbsp</label>
+					<select name="ctry" id="ctry">
+						<option value="afghanistan">Afghanistan</option>
+						<option value="algeria">Algeria</option>
+						<option value="bahamas">Bahamas</option>
+						<option value="bahrain">Bahrain</option>
+						<option value="bangladesh">Bangladesh</option>
+						<option value="cambodia">Cambodia</option>
+						<option value="canada" selected>Canada</option>
+						<option value="china">China</option>
+						<option value="denmark">Denmark</option>
+						<option value="egypt">Egypt</option>
+						<option value="finland">Finland</option>
+						<option value="france">France</option>
+						<option value="germany">Germany</option>
+						<option value="india">India</option>
+						<option value="iran">Iran</option>
+						<option value="italy">Italy</option>
+						<option value="japan">Japan</option>
+						<option value="mexico">Mexico</option>
+						<option value="unik">United Kingdom</option>
+						<option value="unia">United States of America</option>
+						<option value="venezuela">Venezuela</option>
+					</select>					
+				</div>
+				<!-- Postal Code (Text) -->
+				<div id="pc-container" class="form-elm">
+					<label for="pc">Postal Code:&nbsp</label>
+					<input type="text" name="pc" id="pc" placeholder="Postal code goes here">
+				</div>
+				<!-- Hobbies/Interests (Check-boxes) -->
+				<div id="hob-container" class="form-elm">
+					<label for="exercising">Hobbies/Interests:&nbsp
+						<input type="checkbox" name="hob" id="exercising" value="exercising">Exercising
+					</label>
+					<label for="beer">
+						<input type="checkbox" name="hob" id="beer" value="beer">
+						Brewing Beer:&nbsp</label>
+
+					<label for="furn">
+						<input type="checkbox" name="hob" id="furn" value="furn">
+						Restoring Furniture:&nbsp</label>
+
+					<label for="animal">
+						<input type="checkbox" name="hob" id="animal" value="animal">
+						Raising Animals:&nbsp</label>
+					<label for="sports">
+						<input type="checkbox" name="hob" id="sports" value="sports">
+						Sports</label>
+					<label for="rading">
+						<input type="checkbox" name="hob" id="rading" value="reading">
+							Reading</label>
+				</div>
+				<!-- Website (URL) -->
+				<div id="pc-container" class="form-elm">
+					<label for="ur">Website:&nbsp</label>	
+					<input type="url" name="ur" id="ur">
+				</div>
+
+				<!-- button type="submit" creates a button that submits the form and HTML5 elements get automatically validated by the browser -->
+				<button type="submit">Submit</button>
+				<!-- button typ="reset" resets the form values, without needing to refresh the page -->
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
