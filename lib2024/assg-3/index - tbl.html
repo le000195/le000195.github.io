@@ -11,28 +11,31 @@
 					<tbody>                        
                    		<tr>
                    			<!-- First Name (text) -->                            
-                      	 	<td><label for="FirstName">First name</label></td>
+                      	 	<td><label for="FirstName">First name (*)</label></td>
                       	 	<td><input type="text" name="FirstName" id="FirstName" placeholder="First name goes here" required></td>
                       	 	<!-- Last Name (text)-->
-                      	 	<td><label for="LastName">Last Name</label></td>
+                      	 	<td><label for="LastName">Last Name (*)</label></td>
                       	 	<td><input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here" required></td>
                     	</tr>
 						<tr>
 							<!-- Email Id (email) -->
-							<td><label for="email">Email Id</label></td>
+							<td><label for="email">Email Id (*)</label></td>
 							<td><input type="email" name="email" id="email" placeholder="Enter your email here" required></td>
 							<!-- Password -->
-							<td><label for="pass">Password</label></td>
+							<td><label for="pass">Password (*)</label></td>
 							<td><input type="password" name="pass" id="pass" required></td>
 						</tr>
 						<tr>
 							<!-- Introductory Text (Text area) --> 
 							<td><label for="summary">Introductory Text</label></td>
-							<td colspan="3"><textarea name="summary" id="summary" placeholder="Enter introduction here" rows="4" cols="62">This is the value of introductory text</textarea></td>
+							<td><textarea name="summary" id="summary" placeholder="Enter introduction here" rows="4" cols="21"></textarea></td>
+							<!-- Website (URL) -->
+							<td><label for="ur">Website</label></td>
+							<td><input type="url" name="ur" id="ur"></td>
 						</tr>
 						<tr>
 							<!-- Date of Birth (Date) -->
-							<td><label for="dob">Date of Birth</label></td>
+							<td><label for="dob">Date of Birth (*)</label></td>
 							<td><input type="date" name="dob" id="dob" required></td>
 							<!-- Mobile Number  (Number) -->
 							<td><label for="mobi">Mobile Number</label></td>
@@ -111,29 +114,25 @@
 						<tr>
 							<!-- Hobbies/Interests (Check-boxes) -->
 							<td>Hobbies/Interests</td>
-							<td>
-								<label for="exercising">							
-								<input type="checkbox" name="hob" id="exercising" value="exercising">Exercising</label><br>
-								<label for="beer">
-								<input type="checkbox" name="hob" id="beer" value="beer">
-								Brewing Beer</label><br>
+							<td colspan="3">
 								<label for="furn">
 								<input type="checkbox" name="hob" id="furn" value="furn">
-								Restoring Furniture</label><br>
-								<label for="animal">
-								<input type="checkbox" name="hob" id="animal" value="animal">
-								Raising Animals</label><br>
+								Restoring Furniture</label>								
+								<label for="beer">
+								<input type="checkbox" name="hob" id="beer" value="beer">
+								Brewing Beer</label>
 								<label for="sports">
 								<input type="checkbox" name="hob" id="sports" value="sports">
 								Sports</label><br>
+								<label for="exercising">							
+								<input type="checkbox" name="hob" id="exercising" value="exercising">Exercising</label>								
+								<label for="animal">
+								<input type="checkbox" name="hob" id="animal" value="animal">
+								Raising Animals</label>								
 								<label for="read">
 								<input type="checkbox" name="hob" id="rading" value="reading">
-								Reading</label>
-							<!-- Website (URL) -->
-							<td><label for="ur">Website</label></td>
-							<td><input type="url" name="ur" id="ur"></td>
-						</tr>
-						
+								Reading</label>							
+						</tr>						
 				</table>
 				<!-- button type="submit" creates a button that submits the form and HTML5 elements get automatically validated by the browser -->
 				<button type="submit">Submit</button>
