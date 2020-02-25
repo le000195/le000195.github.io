@@ -25,42 +25,45 @@
 							<td><label for="pass">Password (*)</label></td>
 							<td><input type="password" name="pass" id="pass" required></td>
 						</tr>
-						<tr>
-							<!-- Introductory Text (Text area) --> 
-							<td><label for="summary">Introductory Text</label></td>
-							<td><textarea name="summary" id="summary" placeholder="Enter introduction here" rows="4" cols="21"></textarea></td>
-							<!-- Website (URL) -->
-							<td><label for="ur">Website</label></td>
-							<td><input type="url" name="ur" id="ur"></td>
-						</tr>
-						<tr>
+						<tr>							
 							<!-- Date of Birth (Date) -->
 							<td><label for="dob">Date of Birth (*)</label></td>
-							<td><input type="date" name="dob" id="dob" required></td>
+							<td><input type="date" name="dob" id="dob" required></td>					
+							<!-- Gender (radio) -->	
+							<td>Gender</td>
+							<td>
+								<label for="male">
+								<input type="radio" name="gender" id="male" value="male" checked>
+								Male
+								</label>
+								<label for="female">
+								<input type="radio" name="gender" id="female" value="female">
+								Female
+								</label>
+								<label for="other">
+								<input type="radio" name="gender" id="other" value="other">
+								Other
+								</label>
+							</td>																
+						</tr>
+						<tr>							
 							<!-- Mobile Number  (Number) -->
 							<td><label for="mobi">Mobile Number</label></td>
 							<td><input type="number" name="mobi" id="mobi"></td>
+							<!-- Website (URL) -->
+							<td><label for="ur">Website</label></td>
+							<td><input type="url" name="ur" id="ur"></td>	
 						</tr>
 						<tr>			
-							<td>Gender</td>
-							<td>
-								<label for="yes">
-								<input type="radio" name="gender" id="yes" value="yes" checked>
-								Yes
-								</label>
-								<label for="no">
-								<input type="radio" name="gender" id="no" value="no">
-								No
-								</label>
-							</td>												
+																
 							<!-- Address (Text) -->
 							<td><label for="ur">Address</label></td>
 							<td><input type="text" name="addr" id="addr" placeholder="Enter your address here"></td>
-						</tr>
-						<tr>
 							<!-- City (Text) -->
 							<td><label for="city">City</label></td>
 							<td><input type="text" name="city" id="city" placeholder="Enter your city here"></td>
+						</tr>
+						<tr>							
 							<!-- Province (Drop-down) -->		
 							<td><label for="prov">Province</label></td>
 							<td>
@@ -78,8 +81,6 @@
 									<option value="ot">Other provinces</option>
 								</select>
 							</td>
-						</tr>
-						<tr>
 							<!-- Country (Drop-down) -->			
 							<td><label for="ctry">Country</label></td>
 							<td>
@@ -105,39 +106,47 @@
 									<option value="unik">United Kingdom</option>
 									<option value="unia">United States of America</option>
 									<option value="venezuela">Venezuela</option>
+									<option value="otct">Other countries</option>
 								</select>
 							</td>
+						</tr>
+						<tr>							
 							<!-- Postal Code (Text) -->
 							<td><label for="pc">Postal Code</label></td>
-							<td><input type="text" name="pc" id="pc" placeholder="Postal code goes here"></td>							
+							<td><input type="text" name="pc" id="pc" placeholder="Postal code goes here"></td>													
 						</tr>
 						<tr>
 							<!-- Hobbies/Interests (Check-boxes) -->
 							<td>Hobbies/Interests</td>
 							<td colspan="3">
-								<label for="furn">
-								<input type="checkbox" name="hob" id="furn" value="furn">
-								Restoring Furniture</label>								
-								<label for="beer">
-								<input type="checkbox" name="hob" id="beer" value="beer">
-								Brewing Beer</label>
+								<label for="reading">
+								<input type="checkbox" name="hob" id="reading" value="reading">
+								Reading</label>		
 								<label for="sports">
 								<input type="checkbox" name="hob" id="sports" value="sports">
-								Sports</label><br>
+								Sports</label>
 								<label for="exercising">							
 								<input type="checkbox" name="hob" id="exercising" value="exercising">Exercising</label>								
 								<label for="animal">
 								<input type="checkbox" name="hob" id="animal" value="animal">
-								Raising Animals</label>								
-								<label for="read">
-								<input type="checkbox" name="hob" id="rading" value="reading">
-								Reading</label>							
+								Raising Animals</label>
+								<label for="beer">
+								<input type="checkbox" name="hob" id="beer" value="beer">
+								Brewing Beer</label>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<!-- Introductory Text (Text area) --> 
+							<td><label for="summary">Introductory Text</label></td>
+							<td colspan="3"><textarea name="summary" id="summary" placeholder="Enter introduction here" rows="4" cols="62"></textarea></td>	
 						</tr>						
+					</tfoot>								
 				</table>
-				<!-- button type="submit" creates a button that submits the form and HTML5 elements get automatically validated by the browser -->
+				<!-- Submit button  -->
 				<button type="submit">Submit</button>
-				<!-- button typ="reset" resets the form values, without needing to refresh the page -->
-				<button type="reset">Reset</button>
+				<!-- Reset button -->
+				<button type="reset">Reset</button>									
 			</form>
 		</section>
 	</div>
