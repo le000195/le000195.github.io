@@ -8,6 +8,11 @@
 		<section id="html-forms" class="main-section">
 			<form action="somepage.php" method="get">
 				<table>
+					<thead>
+						<tr>
+							<th colspan="4">HTML FORMS</th>
+						</tr>
+					</thead>
 					<tbody>                        
                    		<tr>
                    			<!-- First Name (text) -->                            
@@ -23,7 +28,7 @@
 							<td><input type="email" name="email" id="email" placeholder="Enter your email here" required></td>
 							<!-- Password -->
 							<td><label for="pass">Password (*)</label></td>
-							<td><input type="password" name="pass" id="pass" required></td>
+							<td><input type="password" name="pass" id="pass" placeholder="Enter your password here" required></td>
 						</tr>
 						<tr>							
 							<!-- Date of Birth (Date) -->
@@ -49,10 +54,10 @@
 						<tr>							
 							<!-- Mobile Number  (Number) -->
 							<td><label for="mobi">Mobile Number</label></td>
-							<td><input type="number" name="mobi" id="mobi"></td>
+							<td><input type="number" name="mobi" id="mobi" placeholder="Enter your mobile here"></td>
 							<!-- Website (URL) -->
 							<td><label for="ur">Website</label></td>
-							<td><input type="url" name="ur" id="ur"></td>	
+							<td><input type="url" name="ur" id="ur" placeholder="Enter your website here"></td>	
 						</tr>
 						<tr>			
 																
@@ -134,19 +139,23 @@
 								<input type="checkbox" name="hob" id="beer" value="beer">
 								Brewing Beer</label>
 						</tr>
-					</tbody>
-					<tfoot>
 						<tr>
 							<!-- Introductory Text (Text area) --> 
 							<td><label for="summary">Introductory Text</label></td>
 							<td colspan="3"><textarea name="summary" id="summary" placeholder="Enter introduction here" rows="4" cols="62"></textarea></td>	
+						</tr>
+					</tbody>		
+						
+					<!-- Submit and reset button  -->	
+					<tfoot>
+						<tr>
+							<td colspan="4" align="center">
+								<button type="submit">Submit</button>
+								<button type="reset">Reset</button>
+							</td>
 						</tr>						
 					</tfoot>								
-				</table>
-				<!-- Submit button  -->
-				<button type="submit">Submit</button>
-				<!-- Reset button -->
-				<button type="reset">Reset</button>									
+				</table>											
 			</form>
 		</section>
 	</div>
