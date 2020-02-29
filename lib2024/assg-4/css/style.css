@@ -1,0 +1,241 @@
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS clearfix*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/************************
+		MOBILE FIRST
+************************/
+
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
+.col-main, .col-footer {
+	width:100%;
+}
+
+/* Header styles */ 
+header {
+	background: #7cc576;
+
+}
+
+.logo {
+	float: left;
+	width:100px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: #7cc576;	
+}
+
+.desktop-nav {
+	float: right;
+	width: calc(100% - 100px);
+	display: none;	
+	max-width: 960px;
+}
+
+.desktop-nav ul {
+	width:100%;
+}
+
+.desktop-nav {
+	box-sizing: border-box;
+	width: 100%;
+	float: left;
+	background: #6dcff6;
+}
+
+.main-nav li{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 70px;
+	padding: 10px;
+	text-align: center;
+	background: #6dcff6;
+}
+
+.mobile-nav {
+	width:100%;
+	clear: both;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+}
+
+.mobile-nav li {
+	display: inline-block;
+	box-sizing: border-box;
+	/*width:30%;*/
+	width: 70px;
+	padding: 10px;
+	background: #6dcff6;
+	text-align: center;
+	border-bottom: 2px solid #121212;
+
+}
+
+
+
+/*main content styles*/
+
+.site-content {
+
+	background: #f4f5f7;
+	padding: 15px;
+	width:100%;
+	box-sizing: border-box;
+}
+.second-site-content {
+
+	background: #f4f5f7;
+	padding: 15px;
+	width:100%;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.site-sidebar {
+	background: #f4f5f7;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*footer styles*/
+footer {
+	background: #7cc576;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.social-media li{
+	display: inline-block;
+}
+
+/*This media query will only target the tablet size*/
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+
+	
+}
+
+/*This media query targets, tablet and above*/
+@media only screen and (min-width: 960px) {
+	
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+
+		/*max-width: 1280px;*/
+		max-width: 960px;		
+		margin:0 auto;
+
+	}
+
+	.desktop-nav {
+		display: block;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.site-content {
+		float: left;
+		width: 70%;
+		box-sizing: border-box;
+	}
+	
+
+	.site-sidebar {
+		float: left;
+		width: 30%;
+		box-sizing: border-box;
+	}
+
+	.second-site-content {
+		float: left;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+
+	.second-site-content .img-slide {
+		width: 33%;
+		padding: 10px;
+		box-sizing: border-box;
+		float: left;
+		/*border-image-slice: 20;
+		border-image-width: 20;
+		border-image-outset: 1;
+		border-image-repeat: square;*/
+
+	}
+
+	.col-footer {
+		width: 31%;
+		/*total width = 31% + 1%(left margin) + 1% (right margin) */
+		box-sizing: border-box;
+		/*border box adjusts the width according to the padding only and does not consider margins*/
+		/*Therefore the space used by margins should be manually adjusted in the width declaration*/
+		margin: 0 1%;
+		padding: 10px;
+		float: left;
+	}
+}
+
