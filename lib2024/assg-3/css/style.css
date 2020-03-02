@@ -4,3 +4,7 @@ tfoot tr td {
 	text-align: center;
 }
 
+.fldreq{
+	color: red;
+}
+
