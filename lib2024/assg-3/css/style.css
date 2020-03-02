@@ -1,10 +1,11 @@
 @charset "utf-8";
 
-tfoot tr td {
-	text-align: center;
-}
 
 .fldreq{
 	color: red;
+}
+
+tfoot tr td {
+	text-align: center;
 }
 
