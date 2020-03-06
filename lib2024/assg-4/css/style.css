@@ -246,7 +246,6 @@ p{
 
 .column {
   float: left;
-  margin: 0 auto;
   width: 33.33%; 
  
  /* flex: 33.33%;
@@ -349,8 +348,12 @@ p{
 		background-color: gray;	
 		
 	}
-	
-}
+
+	.column {
+	 	margin-left: 0px;
+	  	width: 33.33%; 
+		
+	}
 
 /*This media targets screen larger than 960px*/
 @media only screen and (min-width: 960px) {
