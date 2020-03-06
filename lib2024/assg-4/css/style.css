@@ -340,6 +340,13 @@ div figure img{
 		width:100%;
 	}
 
+	.header-logo {
+		margin-right: 0;
+		display: inline;
+		/*background-color: green;*/
+	}
+
+
 	.header-nav nav li{		    
 		padding: 10px;
 		
