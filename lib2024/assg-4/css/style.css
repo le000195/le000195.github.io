@@ -341,11 +341,16 @@ div figure img{
 	}
 
 	.header-logo {
+		margin-left: 0;
 		margin-right: 0;
 		display: inline;
 		/*background-color: green;*/
 	}
 
+	.header-title{
+		margin-top: 0;
+	
+	}
 
 	.header-nav nav li{		    
 		padding: 10px;
