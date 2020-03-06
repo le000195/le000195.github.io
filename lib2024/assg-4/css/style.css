@@ -361,8 +361,9 @@ div figure img{
 		width: 100%;
 	}
 
-	.sidebar {		
+	.sidebar {				
 		float: left;
+		margin-top: 10px;
 		width: 100%;
 		padding-left: 10px;
 	
