@@ -345,8 +345,13 @@ div figure img{
 		
 	}
 
+	.first-content {
+		width: 100%;
+	}
+
 	.sidebar {		
-		float: left;	
+		float: left;
+		width: 100%;
 	
 	}
 
