@@ -356,6 +356,7 @@ div figure img{
 		
 	}
 
+
 	.first-content {
 		width: 100%;
 	}
@@ -367,6 +368,11 @@ div figure img{
 	
 	}
 
+	.sidebar-img {
+		margin: auto;
+		background-color: gray;	
+		
+	}
 	
 }
 
