@@ -301,8 +301,7 @@ div figure img{
 
 .footer-copyright{
 	float: left;
-	width: 50%;
-	
+	width: 50%;	
 	margin: 20px 0 10px 0;
 	padding: 20px 5px 20px;	
 	/*background-color: brown;*/
@@ -341,8 +340,8 @@ div figure img{
 	}
 
 	.header-logo {
-		margin-left: 0;
-		margin-right: 0;
+		margin-left: 0px;
+		margin-right: 0px;
 		display: inline;
 		/*background-color: green;*/
 	}
