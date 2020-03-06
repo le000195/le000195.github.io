@@ -323,6 +323,54 @@ div figure img{
 	
 }
 
+/*This media targets mobile, tablet, and width less than 960px*/
+@media only screen and (max-width: 960px) {
+	
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+		max-width: 1280px;				
+		margin:0 auto;
+
+	}
+
+	.header, .main, .footer {
+		width:100%;
+	}
+
+	.header-nav nav li{		    
+		padding: 10px;
+		
+	}
+
+	.sidebar {		
+		float: left;	
+	
+	}
+
+	
+}
+
+/*This media targets screen larger than 960px*/
+@media only screen and (min-width: 960px) {
+	
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+		max-width: 1280px;				
+		margin:0 auto;
+
+	}
+
+	
+	
+}
+
+
 
 
 
