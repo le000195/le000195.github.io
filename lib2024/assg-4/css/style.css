@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 /*issue - resize background image*/
 body {	
 	line-height: 1;
-	background-image: url(../img/white-waves.png);	
+	background-image: url(../img/main-pg.png);	
 	background-origin: border-box;
 	background-size: auto;
 
@@ -74,7 +74,7 @@ table {
 }
 
 .header {
-	/*max-width: 960px;*/
+	max-width: 960px;
  	margin: auto;
  	background: #7cc576;
   	padding: 10px;
@@ -121,68 +121,10 @@ nav ul {
 }
 
 /*end of header*/
-/*
-p{
-	float: left;
-	margin: 5px;
-	padding:5px;
-	box-sizing: border-box
-}
-.desktop-nav {
-	float: right;
-	width: calc(100% - 100px);	
-	max-width: 960px;
-}
-
-.desktop-nav ul {
-	width:100%;
-}
-
-.desktop-nav {
-	box-sizing: border-box;
-	width: 100%;
-	float: left;
-	background: #6dcff6;
-}
-*/
-/*
-.main-nav li{	
-	background: #6dcff6;
-	float: left;
-	width: 10px;
-	padding: 1em;
-	margin: 10px;
-	text-align: center;
-		
-	box-sizing: border-box;
-}
-
-.mobile-nav {
-	width:100%;
-	clear: both;
-}
-
-.mobile-nav-container {
-	position: relative;
-	clear: both;
-}
-
-.mobile-nav li {
-	display: inline-block;
-	box-sizing: border-box;
-	/*width:30%;
-	width: 70px;
-	padding: 1em;
-	background: #6dcff6;
-	text-align: center;
-	border-bottom: 2px solid #121212;
-
-}*/
-
 
 /*main content styles*/
 .main{
-	/*max-width: 960px;*/	
+	max-width: 960px;	
  	margin: auto;
  	background-image: url("/img/white-waves.png");
  	padding: 10px;	
@@ -212,17 +154,17 @@ p{
 .sidebar {		
 	float: right;
 	width: 35%;
-	border-radius: 0%;			
+	border-radius: 0%;
+	margin-bottom: 0px;			
 	/*background-color: purple;*/
 	
 }
 
 /*issue: square the image and fluid*/
 .sidebar-img {
-	object-fit: cover;
-	text-align: center;
+	object-fit: cover;	
 	margin: auto;
-	background-color: gray;	
+	/*background-color: gray;*/	
 	
 }
 
@@ -237,7 +179,7 @@ p{
 
 .img-galary{
 	width: 100%;
-	text-align: center;	
+	text-align: center;		
 	margin: auto;
 	/*display: flex;
 	background-color: yellow;*/
@@ -265,7 +207,7 @@ p{
 .footer {	
 	background: #7cc576;
 	padding: 10px;
-	/*max-width: 960px;	*/
+	max-width: 960px;
  	margin: auto;
  	margin-top: 0;
  	
@@ -331,28 +273,28 @@ p{
 
 	.first-content {
 		padding-bottom: 10px;
-		width: 100%;
+		/*width: 100%;*/
 	}
 
-	.sidebar {				
+	/*.sidebar {				
 		float: left;
 		margin-top: 10px;
 		width: 100%;
 		padding-left: 10px;
 	
-	}
+	}*/
 
 	.sidebar-img {		
 		margin: auto;
 		text-align: left;
-		background-color: gray;	
+		/*background-color: gray;*/	
 		
 	}
 
 	.column {
 	 	margin-left: 0px;
 	  	width: 33%; 
-		
+		/*background-color: red;*/
 	}
 
 /*This media targets screen larger than 960px*/
