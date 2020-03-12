@@ -115,8 +115,7 @@ nav ul {
 	padding: 1em 2em 1em;
 	text-align: center;	
 	border-radius: 8px;	
-	background-color: #6dcff6;
-	
+	background-color: #6dcff6;	
 }
 
 /*end of header*/
@@ -185,7 +184,7 @@ nav ul {
 }
 
 .column {
-  object-fit: fill;	
+  /*object-fit: fill;	*/
   float: left;
   width: 33.33%; 
  
