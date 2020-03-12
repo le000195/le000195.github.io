@@ -245,7 +245,7 @@ nav ul {
 	/*the following css is used to restrict the content beyond 1280px*/
 	/*This is to make sure the main content is in the readbable area for large screen sizes*/
 	header, main, footer {
-		max-width: 1280px;				
+		/*max-width: 1280px;*/				
 		margin:0 auto;
 
 	}
@@ -258,7 +258,6 @@ nav ul {
 		margin-left: 0px;
 		margin-right: 0px;
 		display: inline;
-
 		/*background-color: green;*/
 	}
 
