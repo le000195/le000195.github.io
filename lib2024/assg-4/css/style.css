@@ -19,8 +19,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	/*font-size: 100%;
+	font: inherit;*/
 	vertical-align: baseline;
 }
 
@@ -78,8 +78,7 @@ table {
  	margin: auto;
  	background: #7cc576;
   	padding: 10px;
-  	font-family: "Noto Serif";
-  	font-style: normal; 
+  	font-family: 'abhaya_libreregular', sans-serif;
   	font-size: auto;
   	
 }
@@ -128,9 +127,8 @@ nav ul {
  	margin: auto;
  	background-image: url("/img/white-waves.png");
  	padding: 10px;	
- 	font-family: "Source Sans Pro";
-  	font-style: normal; 
-  	font-size: 16px; 	  	
+ 	font-family: 'advent_proregular', sans-serif;  	
+  	font-size: 15px; 	  	
  	/*background-color: gray;*/
 }
 
@@ -187,6 +185,7 @@ nav ul {
 }
 
 .column {
+  object-fit: fill;	
   float: left;
   width: 33.33%; 
  
@@ -210,7 +209,8 @@ nav ul {
 	max-width: 960px;
  	margin: auto;
  	margin-top: 0;
- 	
+ 	font-family: 'abhaya_libreregular', sans-serif;
+ 	font-size: 15px; 	
 }
 
 .footer-copyright{
@@ -237,6 +237,7 @@ nav ul {
 }
 
 /*This media targets mobile, tablet, and width less than 960px*/
+
 @media only screen and (max-width: 960px) {
 	
 	/*header styles*/
@@ -276,13 +277,13 @@ nav ul {
 		/*width: 100%;*/
 	}
 
-	/*.sidebar {				
+	.sidebar {				
 		float: left;
 		margin-top: 10px;
 		width: 100%;
 		padding-left: 10px;
 	
-	}*/
+	}
 
 	.sidebar-img {		
 		margin: auto;
@@ -296,6 +297,8 @@ nav ul {
 	  	width: 33%; 
 		/*background-color: red;*/
 	}
+}
+
 
 /*This media targets screen larger than 960px*/
 @media only screen and (min-width: 960px) {
