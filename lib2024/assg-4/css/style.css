@@ -258,6 +258,7 @@ nav ul {
 		margin-left: 0px;
 		margin-right: 0px;
 		display: inline;
+
 		/*background-color: green;*/
 	}
 
@@ -267,7 +268,7 @@ nav ul {
 	}
 
 	.header-nav nav li{		    
-		/*padding: 10px;*/
+		padding: 10px;
 		
 	}
 
