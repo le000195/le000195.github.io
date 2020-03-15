@@ -33,9 +33,8 @@ footer, header, hgroup, menu, nav, section {
 /*issue - resize background image*/
 body {	
 	line-height: 1;
-	background-image: url(../img/main-pg.png);	
-	background-origin: border-box;
-	background-size: auto;
+		
+	
 
 }
 
@@ -79,8 +78,7 @@ table {
  	background: #7cc576;
   	padding: 10px;
   	font-family: 'abhaya_libreregular', sans-serif;
-  	font-size: auto;
-  	
+  	font-size: auto;  	
 }
 
 .header-logo {
@@ -127,8 +125,9 @@ nav ul {
  	background-image: url("/img/white-waves.png");
  	padding: 10px;	
  	font-family: 'advent_proregular', sans-serif;  	
-  	font-size: 15px; 	  	
- 	/*background-color: gray;*/
+  	font-size: 15px; 	  	 	
+ 	background-image: url(../img/main-bg.png);
+
 }
 
 .first-content-title{
@@ -209,7 +208,7 @@ nav ul {
  	margin: auto;
  	margin-top: 0;
  	font-family: 'abhaya_libreregular', sans-serif;
- 	font-size: 15px; 	
+ 	font-size: 15px; 
 }
 
 .footer-copyright{
