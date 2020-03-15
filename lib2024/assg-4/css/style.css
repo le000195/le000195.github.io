@@ -184,7 +184,8 @@ nav ul {
   /*object-fit: fill;	*/
   float: left;
   width: 33.33%; 
- 
+ max-width: 100%;
+ height: auto;
  /* flex: 33.33%;
   border-radius: 0%;
   border-color: blue;*/
