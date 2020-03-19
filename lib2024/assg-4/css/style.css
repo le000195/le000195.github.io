@@ -3,10 +3,10 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, 
-h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -72,6 +72,10 @@ table {
 	margin: 0 auto;
 }
 
+h1, h2, h3 {
+	margin: 20px 0px;
+}
+
 /*header styles*/
 .header-container { 	
  	background: #7cc576;
@@ -87,9 +91,9 @@ table {
 	display: inline;
 }
 
-.header-title {		
+.header-title {
 	float: left;
-	margin-top: 20px;		
+	margin-top: 30px;
 }
 
 .header-nav {	
@@ -124,6 +128,10 @@ nav ul {
 	float: left;
 	width: 100%;
 	padding-left: 10px;
+}
+
+h2 {
+	margin: 20px 0px;
 }
 
 .main-content-detail {	
@@ -195,7 +203,7 @@ img {
 }
 
 .footer-social-links ul li {	
-    padding: 20px 5px 20px; 	
+    padding: 20px 5px; 	
 }
 /*end of footer styles*/
 
@@ -230,8 +238,7 @@ img {
 	}
 
 	.footer-copyright {
-		width: 40%;	
-
+		width: 40%;
 }
 
 
