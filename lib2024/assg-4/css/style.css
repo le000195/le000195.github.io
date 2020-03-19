@@ -66,13 +66,14 @@ table {
 	Target Screen size is Desktop (960px)
 *********************************************/
 
-.header, .main, .footer {
+.header-container, .main-container, .footer-container {
 	width:100%;	
 	max-width: 960px;
 	margin: 0 auto;
 }
 
-.header { 	
+/*header styles*/
+.header-container { 	
  	background: #7cc576;
   	padding: 10px;
   	font-family: 'abhaya_libreregular', sans-serif;
@@ -84,22 +85,17 @@ table {
 	margin-left: 40px;
 	margin-right: 40px;
 	display: inline;
-	/*background-color: green;*/
 }
-
 
 .header-title {		
 	float: left;
 	margin-top: 20px;		
-	/*background-color: yellow;*/
-	
 }
 
-.header-nav{	
+.header-nav {	
 	box-sizing: border-box;		
 	width: 100%;
-	display: inline-block;
-	/*background-color: purple;*/		
+	display: inline-block;	
 }
 
 nav ul {
@@ -108,57 +104,42 @@ nav ul {
 
 .header-nav nav li{	
     margin: 0 auto;	
-	padding: 1em 2em 1em;
+	padding: 1em 2em;
 	text-align: center;	
 	border-radius: 8px;	
 	background-color: #6dcff6;	
 }
-
-/*end of header*/
+/*end of header styles*/
 
 /*main content styles*/
-.main{
+.main-container {
  	background-image: url("/img/white-waves.png");
  	padding: 10px;	
  	font-family: 'advent_proregular', sans-serif;  	
   	font-size: 15px; 	  	 	
  	background-image: url(../img/main-bg.png);
-
 }
 
-.first-content-title{
+.main-content-title {
 	float: left;
 	width: 100%;
 	padding-left: 10px;
 }
 
-.first-content {	
+.main-content-detail {	
 	padding: 0px 10px;
 	float: left;
 	margin-right: 20px;
 	display: inline;
 	width: 60%;
 	box-sizing: border-box;
-	/*background-color: yellow;*/
-
 }
 
 .sidebar {		
 	float: right;
 	width: 35%;
 	border-radius: 0%;
-	margin-bottom: 0px;			
-	/*background-color: purple;*/
-	
-}
-
-/*issue: fluid*/
-.sidebar-img {
-	max-width: 100%;
-	height: auto;
-	/*margin: auto;
-	background-color: gray;*/
-	
+	margin-bottom: 0px;	
 }
 
 .second-content {	
@@ -166,36 +147,33 @@ nav ul {
 	padding: 0px 10px;	
 	width:100%;
 	box-sizing: border-box;
-	display: inline-block;
-	
+	display: inline-block;	
 }
 
-.img-galary{	
+.galary-container {	
 	text-align: center;		
-	margin: 0 auto;
 }
 
-
-.column {  
+.galary-img {  
  	float: left;
  	display: inline-block;	 
  	width: 33.33%;
 }
 
-img{
+img {
 	max-width: 100%;
 	height: auto;
 }
 
-/* Clear floats after image containers */
-.img-galary::after {
+.galary-container::after {
   content: "";
   clear: both;
   display: table;
 }
+/*end of main content styles*/
 
 /*footer styles*/
-.footer {	
+.footer-container {	
 	background: #7cc576;
 	padding: 10px; 	
  	margin-top: 0;
@@ -203,66 +181,38 @@ img{
  	font-size: 15px;  	
 }
 
-.footer-copyright{
+.footer-copyright {
 	float: left;
 	width: 50%;	
 	margin: 20px 0px 10px;
 	padding: 20px 5px 20px;	
-	/*background-color: brown;*/
-
 }
 
 .footer-social-links {
 	float: right;
-	margin: 10px 0 10px 0;
-	display: inline;	
-	/*background-color: purple;*/
+	margin: 10px 0 10px;
+	display: inline;
 }
 
-.footer-social-links ul li{
-	
-    padding: 20px 5px 20px; 
-	/*background-color: red;*/
-	
+.footer-social-links ul li {	
+    padding: 20px 5px 20px; 	
 }
+/*end of footer styles*/
 
-/*This media targets mobile, tablet, and width less than 960px*/
+/*This media targets mobiles, tablets, and devices with screen width less than 960px*/
 
-@media only screen and (max-width: 960px) {
-	
-	/*header styles*/
-
-	/*the following css is used to restrict the content beyond 1280px*/
-	/*This is to make sure the main content is in the readbable area for large screen sizes*/
-	header, main, footer {
-		/*max-width: 1280px;*/				
-		/*margin:0 auto;*/
-
-	}
-
-	.header, .main, .footer {
-		width:100%;
-	}
+@media only screen and (max-width: 960px) {	
 
 	.header-logo {
 		margin-left: 0px;
 		margin-right: 0px;
-		display: inline;
-		/*background-color: green;*/
+	}	
+
+	.header-nav nav li {		    
+		padding: 10px 20px;		
 	}
 
-	.header-title{
-		margin-top: 0;
-	
-	}
-
-	.header-nav nav li{		    
-		padding: 10px;
-		
-	}
-
-
-	.first-content {
+	.main-content-detail {
 		padding-bottom: 10px;
 		width: 100%;
 	}
@@ -272,38 +222,21 @@ img{
 		margin-top: 10px;
 		width: 100%;
 		padding-left: 10px;
-	}
+	}	
 
-	/*.sidebar-img {		
-		/*margin: auto;
-		text-align: left;
-		/*background-color: gray;
-		
-	}*/
-
-	.column {
+	.galary-img {
 	 	margin-left: 10px;
 	  	width: 30%; 
-		/*background-color: red;*/
 	}
 }
 
 
-/*This media targets screen larger than 960px*/
+/*This media targets devices with screen larger than 960px*/
 @media only screen and (min-width: 960px) {
-	
-	/*header styles*/
 
-	/*the following css is used to restrict the content beyond 1280px*/
-	/*This is to make sure the main content is in the readbable area for large screen sizes*/
 	header, main, footer {
-		max-width: 1280px;				
-		/*margin:0 auto;*/
-
+		max-width: 1280px;	
 	}
-
-	
-	
 }
 
 
