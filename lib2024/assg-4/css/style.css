@@ -185,7 +185,6 @@ nav ul {
 img{
 	max-width: 100%;
 	height: auto;
-
 }
 
 /* Clear floats after image containers */
@@ -283,7 +282,7 @@ img{
 	}*/
 
 	.column {
-	 	margin-left: 0px;
+	 	margin-left: 10px;
 	  	width: 30%; 
 		/*background-color: red;*/
 	}
