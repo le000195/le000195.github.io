@@ -206,7 +206,7 @@ img{
 .footer-copyright{
 	float: left;
 	width: 50%;	
-	margin: 20px 0 10px 0;
+	margin: 20px 0px 10px;
 	padding: 20px 5px 20px;	
 	/*background-color: brown;*/
 
@@ -267,11 +267,11 @@ img{
 		width: 100%;
 	}
 
-	.sidebar {		
+	.sidebar {
+		float: left;		
 		margin-top: 10px;
 		width: 100%;
 		padding-left: 10px;
-	
 	}
 
 	/*.sidebar-img {		
