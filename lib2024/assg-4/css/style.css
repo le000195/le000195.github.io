@@ -67,12 +67,12 @@ table {
 *********************************************/
 
 .header, .main, .footer {
-	width:100%;
+	width:100%;	
+	max-width: 960px;
+	margin: 0 auto;
 }
 
-.header {
-	max-width: 960px;
- 	margin: auto;
+.header { 	
  	background: #7cc576;
   	padding: 10px;
   	font-family: 'abhaya_libreregular', sans-serif;
@@ -107,7 +107,7 @@ nav ul {
 }
 
 .header-nav nav li{	
-    margin: auto;	
+    margin: 0 auto;	
 	padding: 1em 2em 1em;
 	text-align: center;	
 	border-radius: 8px;	
@@ -118,8 +118,6 @@ nav ul {
 
 /*main content styles*/
 .main{
-	max-width: 960px;	
- 	margin: auto;
  	background-image: url("/img/white-waves.png");
  	padding: 10px;	
  	font-family: 'advent_proregular', sans-serif;  	
@@ -154,41 +152,39 @@ nav ul {
 	
 }
 
-/*issue: square the image and fluid*/
+/*issue: fluid*/
 .sidebar-img {
-	object-fit: cover;	
-	margin: auto;
-	/*background-color: gray;*/	
+	max-width: 100%;
+	height: auto;
+	/*margin: auto;
+	background-color: gray;*/
 	
 }
 
 .second-content {	
 	float: left;
-	padding: 0px 10px 0px 10px;	
+	padding: 0px 10px;	
 	width:100%;
 	box-sizing: border-box;
 	display: inline-block;
 	
 }
 
-.img-galary{
-	width: 100%;
+.img-galary{	
 	text-align: center;		
-	margin: auto;
-	/*display: flex;
-	background-color: yellow;*/
-	
+	margin: 0 auto;
 }
 
-.column {
-  /*object-fit: fill;	*/
-  float: left;
-  width: 33.33%; 
- max-width: 100%;
- height: auto;
- /* flex: 33.33%;
-  border-radius: 0%;
-  border-color: blue;*/
+
+.column {  
+ 	float: left;
+ 	display: inline-block;	 
+ 	width: 33.33%;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
 
 }
 
@@ -202,12 +198,10 @@ nav ul {
 /*footer styles*/
 .footer {	
 	background: #7cc576;
-	padding: 10px;
-	max-width: 960px;
- 	margin: auto;
+	padding: 10px; 	
  	margin-top: 0;
  	font-family: 'abhaya_libreregular', sans-serif;
- 	font-size: 15px; 
+ 	font-size: 15px;  	
 }
 
 .footer-copyright{
@@ -243,7 +237,7 @@ nav ul {
 	/*This is to make sure the main content is in the readbable area for large screen sizes*/
 	header, main, footer {
 		/*max-width: 1280px;*/				
-		margin:0 auto;
+		/*margin:0 auto;*/
 
 	}
 
@@ -271,27 +265,26 @@ nav ul {
 
 	.first-content {
 		padding-bottom: 10px;
-		/*width: 100%;*/
+		width: 100%;
 	}
 
-	.sidebar {				
-		float: right;
+	.sidebar {		
 		margin-top: 10px;
 		width: 100%;
 		padding-left: 10px;
 	
 	}
 
-	.sidebar-img {		
-		margin: auto;
+	/*.sidebar-img {		
+		/*margin: auto;
 		text-align: left;
-		/*background-color: gray;*/	
+		/*background-color: gray;
 		
-	}
+	}*/
 
 	.column {
 	 	margin-left: 0px;
-	  	width: 33%; 
+	  	width: 30%; 
 		/*background-color: red;*/
 	}
 }
@@ -306,7 +299,7 @@ nav ul {
 	/*This is to make sure the main content is in the readbable area for large screen sizes*/
 	header, main, footer {
 		max-width: 1280px;				
-		margin:0 auto;
+		/*margin:0 auto;*/
 
 	}
 
