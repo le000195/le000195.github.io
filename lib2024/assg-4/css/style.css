@@ -68,7 +68,7 @@ table {
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
+
 
 html {
   box-sizing: border-box;
@@ -276,7 +276,7 @@ img {
 
 	.header-title {
 		margin-top: 0px;
-		
+
 	}
 
 	.header-nav nav ul {
