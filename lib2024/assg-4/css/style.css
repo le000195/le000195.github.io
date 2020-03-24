@@ -19,8 +19,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/*font-size: 100%;
-	font: inherit;*/
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -54,16 +54,6 @@ table {
 	border-spacing: 0;
 }
 
-/*CSS clearfix*/
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;	
-}
-
-/********************************************
-	All devices setup
-*********************************************/
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;
@@ -71,6 +61,13 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+/*CSS clearfix*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;	
 }
 
 /********************************************
@@ -85,20 +82,20 @@ html {
 
 h1, h2, h3 {
 	margin: 20px 0px;
+	font-weight: bold;
 }
 
 /*header styles*/
 .header-container { 	
- 	background: #7cc576;
+ 	background-color: #7cc576;
   	padding: 10px;
-  	font-family: 'abhaya_libreregular', sans-serif;
+  	font-family: 'abhaya_libreregular', sans-serif;	  	
 }
 
 .header-logo {
 	float: left;	
 	margin-left: 40px;
 	margin-right: 40px;
-	display: inline;
 }
 
 .header-title {
@@ -106,8 +103,11 @@ h1, h2, h3 {
 	margin-top: 10px;
 }
 
-.header-nav {	
-	box-sizing: border-box;		
+h1 {
+	font-size: 2em;
+}
+
+.header-nav {		
 	width: 100%;
 	display: inline-block;	
 }
@@ -127,11 +127,9 @@ nav ul {
 
 /*main content styles*/
 .main-container {
- 	background-image: url("/img/white-waves.png");
- 	padding: 10px;	
- 	font-family: 'advent_proregular', sans-serif;  	
-  	font-size: 15px; 	  	 	
  	background-image: url(../img/main-bg.png);
+ 	padding: 10px;		
+ 	font-family: 'advent_proregular', sans-serif;   	 	 	
 }
 
 .main-content-title {
@@ -140,13 +138,19 @@ nav ul {
 	padding-left: 10px;
 }
 
+h2 {
+	font-size: 1.5em;
+}
+
 .main-content-detail {	
 	padding: 0px 10px;
 	float: left;
-	margin-right: 20px;
-	display: inline;
+	margin-right: 20px;	
 	width: 60%;
-	box-sizing: border-box;
+}
+
+main p, figcaption {	
+  	font-size: 16px; 
 }
 
 .sidebar {		
@@ -156,12 +160,14 @@ nav ul {
 	margin-bottom: 0px;	
 }
 
+h3 {
+	font-size: 1.17em;
+}
+
 .second-content {	
 	float: left;
 	padding: 0px 10px;	
-	width:100%;
-	box-sizing: border-box;
-	display: inline-block;	
+	width:100%;	
 }
 
 .galary-container {	
@@ -169,8 +175,7 @@ nav ul {
 }
 
 .galary-img {  
- 	float: left;
- 	display: inline-block;	 
+ 	float: left; 
  	width: 33.33%;
 }
 
@@ -179,33 +184,27 @@ img {
 	height: auto;
 }
 
-.galary-container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 /*end of main content styles*/
 
 /*footer styles*/
 .footer-container {	
-	background: #7cc576;
+	background-color: #7cc576;
 	padding: 10px; 	
  	margin-top: 0;
- 	font-family: 'abhaya_libreregular', sans-serif;
- 	font-size: 15px;  	
+ 	font-family: 'abhaya_libreregular', sans-serif;	 		
 }
 
 .footer-copyright {
 	float: left;
 	width: 50%;	
 	margin: 20px 0px 10px;
-	padding: 20px 5px 20px;	
+	padding: 20px 5px 20px;
+ 	font-size: 15px;  
 }
 
 .footer-social-links {
 	float: right;
 	margin: 10px 0 10px;
-	display: inline;
 }
 
 .footer-social-links ul li {	
@@ -213,13 +212,12 @@ img {
 }
 /*end of footer styles*/
 
-/*This media targets mobiles, tablets, and devices with screen width less than 960px*/
-
-@media only screen and (min-width: 370px) and (max-width: 960px) {	
+/*This media targets tablets, and devices with screen width less than 768px*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {	
 
 	.header-logo {
 		margin-left: 0px;
-		margin-right: 20px;
+		margin-right: 10px;
 	}
 
 	.header-nav nav li {		    
@@ -228,13 +226,11 @@ img {
 
 	.main-content-detail {
 		padding-bottom: 10px;
-		width: 100%;
 	}
 
 	.sidebar {
 		float: left;		
 		margin-top: 10px;
-		width: 100%;
 		padding-left: 10px;
 	}	
 
@@ -242,23 +238,15 @@ img {
 	 	margin-left: 10px;
 	  	width: 30%; 
 	}
-
-	.footer-copyright {
-		width: 40%;
-}
+	
 }
 
-/*This media targets devices with screen less than 960px*/
-@media only screen and (max-width: 370px) {
+/*This media targets mobile phones or devices with screen less than 480px*/
+@media only screen and (max-width: 480px) {
 
 	.header-logo {
 		margin-left: 0px;
 		margin-right: 0px;
-	}
-
-	.header-title {
-		margin-top: 0px;
-
 	}
 
 	.header-nav nav ul {
@@ -290,7 +278,6 @@ img {
 	.footer-copyright {
 		width: 100%;
 		margin: 0px;
-
 	}
 
 	.footer-social-links {
@@ -298,7 +285,6 @@ img {
 		margin: 0px;
 		padding: 0px;
 	}
-
 }
 
 /*This media targets devices with screen larger than 960px*/
