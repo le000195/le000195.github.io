@@ -144,6 +144,72 @@
 					I would include a reference to the external style sheet file inside the &ltlink&gt element, inside the head section in the HTML page. For example, &ltlink rel="stylesheet" type="text/css" href="style.css"&gt
 				</p>
 			</li>
+			<!-- Question 13 -->
+			<li>
+				<p>
+					<strong>Question: </strong>
+					Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px. 
+				</p>
+				<p>
+					<strong>Answer: </strong><br>
+					element {<br>
+						&nbsp;&nbsp;&nbsp;width: 200px;<br>
+  						&nbsp;&nbsp;&nbsp;height: 200px;<br>
+						&nbsp;&nbsp;&nbsp;position: absolute;<br>						
+						&nbsp;&nbsp;&nbsp;top: 50%;<br>
+						&nbsp;&nbsp;&nbsp;left:50%;<br>
+						&nbsp;&nbsp;&nbsp;margin-left: -100px;<br>
+  						&nbsp;&nbsp;&nbsp;margin-top: -100px;<br>
+					}				
+				</p>
+			</li>
+			<!-- Question 14 -->
+			<li>
+				<p>
+					<strong>Question: </strong>
+					Create CSS keyframes block called "spin" that rotates an element. 
+				</p>
+				<p>
+					<strong>Answer: </strong><br>
+					@keyframes spin {<br>
+						&nbsp;&nbsp;&nbsp;from {<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform: rotate(0deg);<br>
+						&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;to {<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform: rotate(180deg);<br>
+						&nbsp;&nbsp;&nbsp;}<br>  						
+					}				
+				</p>
+			</li>
+			<!-- Question 15 -->
+			<li>
+				<p>
+					<strong>Question: </strong>
+					Create CSS animation block to rotate an element that has the following properties :
+						<ul>
+							<li>class "rotate-me"</li>
+							<li>It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"</li>
+						</ul> 
+				</p>
+				<p>
+					<strong>Answer: </strong><br>
+					.rotate-me {<br>
+						&nbsp;&nbsp;&nbsp;animation:<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spin 0.5s linear 5,<br>
+					}								
+				</p>
+			</li>
+			<!-- Question 16 -->
+			<li>
+				<p>
+					<strong>Question: </strong>
+					How would you include create an alert with string "I love JavaScript" using JavaScript?		
+				</p>
+				<p>
+					<strong>Answer: </strong>
+					alert("I love JavaScript");													
+				</p>
+			</li>
 	  	</ol>
   	</section>	
 </body>
