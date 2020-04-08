@@ -221,6 +221,7 @@ img {
 .main-schedule-detail {
 	float: left;
 	width: 100%;
+	overflow-x:auto;
 }
 
 .main-schedule-detail table {
