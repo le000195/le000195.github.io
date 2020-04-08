@@ -77,6 +77,7 @@ html {
 
 .header-container, .main-container, .footer-container {
 	width:100%;	
+	max-width: 450px;
 	margin: 0 auto;
 }
 
