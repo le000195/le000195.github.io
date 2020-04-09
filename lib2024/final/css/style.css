@@ -329,7 +329,7 @@ button:hover {
 /*end of main content styles*/
 
 /*footer styles*/
-.footer-container {
+.footer {
 	font-family: 'abhaya_libreregular', sans-serif;
 	padding: 10px;
 	background: #454545;
@@ -345,19 +345,33 @@ button:hover {
 	text-align: center;
 }
 
-.company-info, .links {
+.company-info, .links, address {
 	text-align: center;
 }
 
-
-.links ul li {
-	margin-bottom: 10px;
+.social-media [class*="fa"] {   
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
 }
 
-.social-media ul li {
-	display: inline-block;	
-    padding: 5px; 
- }
+.fa-facebook {
+    background-color: #3b5999;
+}
+
+.fa-youtube-play {
+    background-color: #cd201f;
+}
+
+.fa-twitter { 
+    background-color: #55acee; 
+}
 
 @keyframes spin {
 	from {
@@ -372,6 +386,7 @@ button:hover {
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	.header-container, .main-container, .footer-container {
 		max-width: 750px;
+		margin: auto;
 	}
 
 }
@@ -436,10 +451,7 @@ button:hover {
 		padding: 10px;
 		float: left;
 	}
-
-	.links nav, address {
-		text-align: center;
-	}
+	
 }
 
 
