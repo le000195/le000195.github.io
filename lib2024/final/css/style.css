@@ -64,6 +64,22 @@ html {
   box-sizing: inherit;
 }
 
+h1 {	
+	font-size: 2em;
+}
+
+h1, h2, h3 {
+	margin: 20px 0px 10px;
+	font-weight: bold;
+	color: #6babaa;
+}
+
+h4 {
+	margin: 30px 0px;
+	font-weight: bold;
+	color: #ffffff; 
+}
+
 /*CSS clearfix*/
 .clearfix:after {
 	content: "";
@@ -81,31 +97,15 @@ html {
 	margin: 0 auto;
 }
 
-h1, h2, h3 {
-	margin: 20px 0px 10px;
-	font-weight: bold;
-	color: #6babaa;
-}
-
-h4 {
-	margin: 30px 0px;
-	font-weight: bold;
-	color: #ffffff; 
-}
-
 /*header styles*/
 .header-container {  	
-  	font-family: 'abhaya_libreregular', sans-serif;	  	
+  	font-family: 'Merriweather', sans-serif;	  	
 }
 
 .header-title {
 	float: left;
 	margin-top: 10px;
 	margin-left: 20px;	
-}
-
-h1 {
-	font-size: 2em;
 }
 
 .ham {
@@ -163,7 +163,7 @@ h1 {
 	margin-left: 10px;
 	padding: 10px;
 	background: #72a9ae;
-	border-bottom: 2px ;
+	font-size: 12px;
 }
 
 .main-nav li {
@@ -181,7 +181,7 @@ h1 {
 /*main content styles*/
 .main-container {
  	background-image: url(../img/main-bg.png); 			
- 	font-family: 'advent_proregular', sans-serif; 	 	   	 	 	
+ 	font-family: 'abhaya_libreregular', sans-serif; 	 	   	 	 	
 }
 
 .content-title {
@@ -226,7 +226,6 @@ img {
 }
 
 .main-schedule-detail table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 95%;
   table-layout:auto;
@@ -331,6 +330,7 @@ button:hover {
 
 /*footer styles*/
 .footer-container {
+	font-family: 'abhaya_libreregular', sans-serif;
 	padding: 10px;
 	background: #454545;
 	text-align: center;
@@ -376,7 +376,6 @@ button:hover {
 
 }
 
-
 /*This media query targets, tablet and above*/
 @media only screen and (min-width: 768px) {
 
@@ -401,21 +400,8 @@ button:hover {
 		display: inline-block;
 		max-width: 15%;		
 		padding: 20px 20px 20px 10px;
+		font-size: 12px;
 	}
-
-	/*.header-nav  {			
-		display: inline-block;	
-		background-color: #72a9ae;	
-		width: 100%;
-	}
-
-	.header-nav nav li {		
-	    margin-left: 20px;
-	    padding-top: 20px; 
-	    padding-bottom: 20px;
-	  	width: 10%;
-		float: left;
-	}*/
 
 	.main-about-detail {
 		float: left;	
