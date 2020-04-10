@@ -68,6 +68,10 @@ h1 {
 	font-size: 2em;
 }
 
+h2 {
+	font-size: 1.5em;
+}
+
 h1, h2, h3 {
 	margin: 20px 0px 10px;
 	font-weight: bold;
@@ -87,10 +91,27 @@ h4 {
 	clear: both;	
 }
 
+/* load animation first for 2s before loading the webpage */
+#animation-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
 /********************************************
 	Mobile First
 *********************************************/
-
 .header-container, .main-container, .footer-container {
 	width:100%;	
 	max-width: 450px;
@@ -102,17 +123,14 @@ h4 {
   	font-family: 'Merriweather', sans-serif;	  	
 }
 
-.header-title {
+.header-logo {
 	float: left;
 	margin-top: 10px;
 	margin-left: 20px;	
 }
 
-.ham {
-	float: right;
-}
-
-.ham {		
+.mobile-nav-shortcut {	
+	float: right;	
 	height: 25px;
 	margin:30px 20px 20px;
 	padding-top: 5px;
@@ -121,28 +139,24 @@ h4 {
 	cursor: pointer;
 }
 
-.ham, .ham:before, .ham:after {
+.mobile-nav-shortcut, .mobile-nav-shortcut:before, .mobile-nav-shortcut:after {
 	width: 30px;
 	border-top: 5px solid black;
 }
 
-.ham:before {
+.mobile-nav-shortcut:before {
 	content: "";
 	display:block;
 	position: absolute;
 	background: black;
 }
 
-.ham:after {
+.mobile-nav-shortcut:after {
 	content: "";
 	display: block;
 	background: black;
 	position: absolute;
 	bottom: 0;
-}
-
-.ham:hover {
-	animation: spin 2s linear infinite;
 }
 
 .mobile-nav-container {
@@ -158,19 +172,17 @@ h4 {
 }
 
 .mobile-nav li {
-	box-sizing: border-box;
 	width:100%;
-	margin-left: 10px;
 	padding: 10px;
 	background: #72a9ae;
 	font-size: 12px;
+	border-bottom: 0.5px dotted;
 }
 
 .main-nav li {
 	display: block;
-	box-sizing: border-box;
 	width: 100%;
-	padding: 10px;
+	padding: 10px 10px 10px 20px;
 }
 
 .header-nav {
@@ -188,10 +200,6 @@ h4 {
 	float: left;
 	width: 100%;	
 	margin-left: 20px;
-}
-
-h2 {
-	font-size: 1.5em;
 }
 
 .main-about-detail {
@@ -316,15 +324,37 @@ button:hover {
 	margin: 10px;
 }
 
-.contact-card-email img {
+.contact-card-envelope {
+	margin-top: 10px;	
+	text-align: center;
+	color: #6babaa;
+}
+
+.contact-card-envelope .fa {
+	/*border-radius: 2px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 1px;
+    width: 30px;
+    	font-size: 12px;
+		border-radius: 2px;
+		border: 1px solid green;
+		padding: 2px;
+		background-color: green;
+		color: white;
+		color: #6babaa;	*/   
+}
+
+/*.contact-card-envelope img {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	cursor: pointer; 
 }
 
-.contact-card-email img:hover {
+.contact-card-envelope img:hover {
 	animation: spin 2s linear infinite;
-}
+}*/
 
 /*end of main content styles*/
 
@@ -349,14 +379,18 @@ button:hover {
 	text-align: center;
 }
 
-.social-media [class*="fa"] {   
+.links li {
+	padding: 10px;
+}
+
+.social-media .fa {   
     border-radius: 50px;
     color: #fff;
     display: inline-block;
     height: 30px;
     line-height: 30px;
     margin: auto 3px;
-    width: 30px;
+    width: 30px;    
     font-size: 15px;
     text-align: center;
 }
@@ -373,6 +407,19 @@ button:hover {
     background-color: #55acee; 
 }
 
+.social-media .fa:hover {
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+   /* -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;    */
+}
+
 @keyframes spin {
 	from {
 		transform: rotate(0deg);
@@ -380,6 +427,11 @@ button:hover {
 	to {
 		transform: rotate(180deg);
 	}
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
 /*This media query will only target the tablet size*/
@@ -398,7 +450,7 @@ button:hover {
 		max-width: 960px;
 	}
 
-	.ham {
+	.mobile-nav-shortcut {
 		display: none;
 	}
 

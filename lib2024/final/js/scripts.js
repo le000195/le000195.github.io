@@ -1,6 +1,15 @@
 window.onload = init;
 
-function init() {   		     
+function init() {   
+        var myVar;	
+
+        //load animation first for 2s
+        document.getElementById("animation-loader").style.display = "block";
+        document.getElementById("my-site").style.display = "none";
+
+        //load webpage after running animation for 2s
+        myVar = setTimeout(showPage, 2000);
+
         //create schedule table
          createTableFromJSON();
 
@@ -16,9 +25,15 @@ function init() {
             $("#contact-card-info").addClass('reveal');
     }); 	
 
-         document.querySelector('.ham').onclick = showHideMobileMenu;
+         document.querySelector('.mobile-nav-shortcut').onclick = showHideMobileMenu;
 
          window.addEventListener("resize", hideMobileMenu);   
+}
+
+//load webpage
+function showPage() {
+          document.getElementById("animation-loader").style.display = "none";
+          document.getElementById("my-site").style.display = "block";
 }
 
 //create schedule table

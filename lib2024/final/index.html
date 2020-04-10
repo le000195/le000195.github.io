@@ -8,19 +8,37 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-	<!-- header content starts -->
-	<header class="header-container clearfix" id="header-container">		
-		<!-- header logo -->
-		<div class="header-title" id="header-title">
-			<h1>MY LOGO</h1>	
-		</div>
-		<!-- header navigation -->
-		<!-- mobile navigation -->
-		<div class="ham"></div>
-		<div class="mobile-nav-container clearfix">
-			<div class="mobile-nav" id="mobile-nav">
+	<!-- animation loader -->
+	<div id="animation-loader"></div>
+	<!-- load animation for 2s before loading the webpage -->
+	<div id="my-site">
+		<!-- header content starts -->
+		<header class="header-container clearfix" id="header-container">		
+			<!-- header logo -->
+			<div class="header-logo" id="header-logo">
+				<h1>MY LOGO</h1>	
+			</div>
+			<!-- header navigation -->
+			<!-- mobile navigation -->
+			<div class="mobile-nav-shortcut"></div>
+
+			<div class="mobile-nav-container clearfix">
+				<div class="mobile-nav" id="mobile-nav">
+					<nav>
+						<ul class="main-nav">
+							<li>HOME</li>
+							<li>ABOUT</li>
+							<li>SCHEDULE</li>
+							<li>PORTFOLIO</li>
+							<li>CONTACT</li>
+						</ul>			
+					</nav>			
+				</div>
+			</div>
+			<!-- desktop navigation -->
+			<div class="header-nav" id="header-nav">
 				<nav>
-					<ul class="main-nav">
+					<ul>
 						<li>HOME</li>
 						<li>ABOUT</li>
 						<li>SCHEDULE</li>
@@ -29,209 +47,205 @@
 					</ul>			
 				</nav>			
 			</div>
-		</div>
-		<!-- desktop navigation -->
-		<div class="header-nav" id="header-nav">
-			<nav>
-				<ul>
-					<li>HOME</li>
-					<li>ABOUT</li>
-					<li>SCHEDULE</li>
-					<li>PORTFOLIO</li>
-					<li>CONTACT</li>
-				</ul>			
-			</nav>			
-		</div>
-	</header>
-	<!-- header content ends -->
+		</header>
+		<!-- header content ends -->
 
-	<!-- main content starts -->	
-	<main class="main-container clearfix" id="main-container">
-		<!-- About content -->
-		<article class="main-about" id="main-about">
-			<div class="content-title" id="about-title">
-				<h2>ABOUT</h2>
-			</div>
-			<div class="main-about-detail" id="main-about-detail">					
-				<p>Soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle 	bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly bears soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummiestoffee topping jelly soufle bonbon sweet roll.  gummies toffee topping jelly</p><br>
-				<p>Soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly bears soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee toppingbonbon sweet roll.  gummies toffee topping jelly</p>
-			</div>
-		</article>				
-
-		<!-- Sidebar -->		
-		<aside class="sidebar" id="sidebar">
-			<!-- sidebar image -->
-			<section class="sidebar-img" id="sidebar-img">
-				<img src="img/side-img.jpg" alt="Sidebar Image">
-			</section>						
-		</aside>
-		
-		<!-- Schedule content -->
-		<article class="main-schedule clearfix" id="main-schedule">
-			<div class="content-title" id="schedule-title">
-				<h2>SCHEDULE</h2>
-			</div>
-			<div class="main-schedule-detail" id="json_table">
-			</div>		
-		</article>		
-
-		<!-- Edit Profile -->
-		<article class="main-profile clearfix" id="main-profile">
-			<div class="content-title" id="profile-title">
-				<h2>EDIT PROFILE</h2>
-			</div>
-			<div class="main-profile-detail" id="main-profile-detail">
-				<form id="form" action="submit.php" method="post">
-					<table>
-						<tbody>                        
-                   			<tr>
-	                   			<!-- Name (text) -->                            
-	                      	 	<td>
-	                      	 		<label for="name">Name </label>
-	                      	 	</td>
-	                      	 	<td>
-	                      	 		<input type="text" name="name" id="name" placeholder="Name goes here" required>
-	                      	 	</td>
-	                      	 </tr>
-	                      	 <tr>
-								<!-- Email (email)-->
-								<td>
-									<label for="email">Email </label>
-								</td>
-								<td>
-									<input type="email" name="email" id="email" placeholder="Enter your email here" required>
-								</td>
-							</tr>
-							<tr>																		
-								<!-- Address (Text) -->
-								<td>
-									<label for="addr">Address </label>
-								</td>
-								<td>
-									<input type="text" name="addr" id="addr" placeholder="Enter your address here" required>
-								</td>
-							</tr>
-							<tr>
-								<!-- City (Text) -->
-								<td>
-									<label for="city">City</label>
-								</td>
-								<td>
-									<input type="text" name="city" id="city" placeholder="Enter your city here" required>
-								</td>
-							</tr>
-							<tr>
-								<!-- Province (Drop-down) -->		
-								<td>
-									<label for="prov">Province </label>
-								</td>
-								<td>
-									<select name="prov" id="prov" required>
-										<option value="" selected>Select Province</option>
-										<option value="AB">Alberta</option>
-										<option value="BC">British Columbia</option>
-										<option value="MB">Manitoba</option>
-										<option value="NB">New Brunswick</option>
-										<option value="NL">Newfoundland Labrador</option>
-										<option value="NS">Nova Scotia</option>
-										<option value="ON">Ontario</option>
-										<option value="PE">Prince Edward Island</option>
-										<option value="QC">Quebec</option>
-										<option value="SK">Saskatchewan</option>						
-									</select>
-								</td>
-							</tr>
-							<tr>							
-								<!-- Postal Code (Text) -->
-								<td>
-									<label for="pc">Postal Code</label>
-								</td>
-								<td>
-									<input type="text" name="pc" id="pc" placeholder="A0A 0A0" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
-								</td>													
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<td colspan="2">
-									<button type="submit">SUBMIT</button>
-								</td>
-							</tr>						
-						</tfoot>								
-					</table>		
-				</form>
-			</div>		
-		</article>
-
-		<!-- Display Profile Info on contact card -->
-		<aside class="contact-card clearfix" id="contact-card">
-			<div class="content-title" id="contact-card-title">
-				<h2>PROFILE INFO</h2>
-			</div>			
-			<div class="contact-card-detail clearfix" id="contact-card-detail">
-				<div class="contact-card-img" id="contact-card-img">
-					<img src="img/profile-img.jpg" alt="Profile Image">
+		<!-- main content starts -->	
+		<main class="main-container clearfix" id="main-container">
+			<!-- About section -->
+			<article class="main-about" id="main-about">
+				<div class="content-title" id="about-title">
+					<h2>ABOUT</h2>
 				</div>
-				<div class="contact-card-info clearfix" id="contact-card-info">
-					<div class="contact-card-name" id="contact-card-name">
-						<p><span id="name_result"></span></p>
+				<div class="main-about-detail" id="main-about-detail">					
+					<p>Soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle 	bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly bears soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummiestoffee topping jelly soufle bonbon sweet roll.  gummies toffee topping jelly</p><br>
+					<p>Soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly bears soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee topping jelly soufle bonbon sweet roll. lootsle roll chocolate gummies toffee toppingbonbon sweet roll.  gummies toffee topping jelly</p>
+				</div>
+			</article>				
+
+			<!-- Sidebar section -->		
+			<aside class="sidebar" id="sidebar">
+				<section class="sidebar-img" id="sidebar-img">
+					<img src="img/side-img.jpg" alt="Sidebar Image">
+				</section>						
+			</aside>
+			
+			<!-- Schedule table -->
+			<article class="main-schedule clearfix" id="main-schedule">
+				<div class="content-title" id="schedule-title">
+					<h2>SCHEDULE</h2>
+				</div>
+				<div class="main-schedule-detail" id="json_table">
+				</div>		
+			</article>		
+
+			<!-- Edit Profile section-->
+			<article class="main-profile clearfix" id="main-profile">
+				<div class="content-title" id="profile-title">
+					<h2>EDIT PROFILE</h2>
+				</div>
+				<!-- Edit Profile form -->
+				<div class="main-profile-detail" id="main-profile-detail">
+					<form id="form" action="submit.php" method="post">
+						<table>
+							<tbody>                        
+	                   			<tr>
+		                   			<!-- Name (text) -->                            
+		                      	 	<td>
+		                      	 		<label for="name">Name </label>
+		                      	 	</td>
+		                      	 	<td>
+		                      	 		<input type="text" name="name" id="name" placeholder="Name goes here" required>
+		                      	 	</td>
+		                      	 </tr>
+		                      	 <tr>
+									<!-- Email (email)-->
+									<td>
+										<label for="email">Email </label>
+									</td>
+									<td>
+										<input type="email" name="email" id="email" placeholder="Enter your email here" required>
+									</td>
+								</tr>
+								<tr>																		
+									<!-- Address (Text) -->
+									<td>
+										<label for="addr">Address </label>
+									</td>
+									<td>
+										<input type="text" name="addr" id="addr" placeholder="Enter your address here" required>
+									</td>
+								</tr>
+								<tr>
+									<!-- City (Text) -->
+									<td>
+										<label for="city">City</label>
+									</td>
+									<td>
+										<input type="text" name="city" id="city" placeholder="Enter your city here" required>
+									</td>
+								</tr>
+								<tr>
+									<!-- Province (Drop-down) -->		
+									<td>
+										<label for="prov">Province </label>
+									</td>
+									<td>
+										<select name="prov" id="prov" required>
+											<option value="" selected>Select Province</option>
+											<option value="AB">Alberta</option>
+											<option value="BC">British Columbia</option>
+											<option value="MB">Manitoba</option>
+											<option value="NB">New Brunswick</option>
+											<option value="NL">Newfoundland Labrador</option>
+											<option value="NS">Nova Scotia</option>
+											<option value="ON">Ontario</option>
+											<option value="PE">Prince Edward Island</option>
+											<option value="QC">Quebec</option>
+											<option value="SK">Saskatchewan</option>						
+										</select>
+									</td>
+								</tr>
+								<tr>							
+									<!-- Postal Code (Text) -->
+									<td>
+										<label for="pc">Postal Code</label>
+									</td>
+									<td>
+										<input type="text" name="pc" id="pc" placeholder="A0A 0A0" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+									</td>													
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">
+										<button type="submit">SUBMIT</button>
+									</td>
+								</tr>						
+							</tfoot>								
+						</table>		
+					</form>
+				</div>		
+			</article>
+
+			<!-- Profile Info (contact card) section -->
+			<aside class="contact-card clearfix" id="contact-card">
+				<div class="content-title" id="contact-card-title">
+					<h2>PROFILE INFO</h2>
+				</div>
+				<!-- Profile Info -->
+				<div class="contact-card-detail clearfix" id="contact-card-detail">
+					<!-- profile image -->
+					<div class="contact-card-img" id="contact-card-img">
+						<img src="img/profile-img.jpg" alt="Profile Image">
 					</div>
-					<div>
-						<p><span id="email_result"></span></p><br>
-						<p><span id="addr1_result"></span></p><br>
-						<p><span id="addr2_result"></span></p>
-					</div>									
-					<div class="contact-card-email" id="contact-card-email">
-						<img src="img/email-icon.jpg" alt="Email icon">
+					<!-- profile details -->
+					<div class="contact-card-info clearfix" id="contact-card-info">
+						<div class="contact-card-name" id="contact-card-name">
+							<p><span id="name_result"></span></p>
+						</div>
+
+						<div>
+							<p><span id="email_result"></span></p><br>
+							<p><span id="addr1_result"></span></p><br>
+							<p><span id="addr2_result"></span></p>
+						</div>
+					</div>					
+					<!-- email envelope icon -->
+					<div class="contact-card-envelope" id="contact-card-envelope">
+						<i class="fa fa-envelope"></i>						
 					</div>
-				</div>				
-			</div>		
-		</article>	
-	</main>
-	<!-- main content ends -->
+				</div>		
+			</aside>	
+		</main>
+		<!-- main content ends -->
 
-	<!-- footer content starts -->
-	<footer class="footer-container clearfix" id="footer">
-		<div class="footer clearfix">
-			<section class="col-footer links">
-				<h4>QUICK LINKS</h4>
-				<nav>
-					<ul>
-						<li>SCHEDULE</li>
-						<li>ABOUT</li>
-						<li>PORTFOLIO</li>
-						<li>CONTACT</li>
-					</ul>
-				</nav>
-			</section>
-
-			<section class="col-footer">
-				<h4>FOLLOW US</h4>
-				<div class="social-media">
-					<a href="https://www.facebook.com" alt="Facebook" title="Follow us on Facebook" target="_blank">
-						<i class="fa fa-facebook"></i>
-					</a>			
-					<a href="https://www.youtube.com" alt="youtube" title="Follow us on Youtube" target="_blank">
-						<i class="fa fa-youtube-play"></i>
-					</a>
-					<a href="https://www.twitter.com" alt="Twitter" title="Follow us on Twitter" target="_blank">				
-						<i class="fa fa-twitter"></i>					
-					</a>
-				</div>				
-			</section>
-
-			<section class="col-footer company-info">
-				<h4>ADDRESS</h4>
-				<address>
-					<p>1385 Woodroffe Ave,</p><br>
-					<p>Nepean, ON K2G 1V8</p><br>
-					<p>Canada</p>
-				</address>
-			</section>
-		</div>
-	</footer>
-	<!-- footer content ends -->
+		<!-- footer content starts -->
+		<footer class="footer-container clearfix" id="footer">
+			<div class="footer clearfix">
+				<!-- quick links column -->
+				<section class="col-footer links">
+					<h4>QUICK LINKS</h4>
+					<nav>
+						<ul>
+							<li>SCHEDULE</li>
+							<li>ABOUT</li>
+							<li>PORTFOLIO</li>
+							<li>CONTACT</li>
+						</ul>
+					</nav>
+				</section>
+				<!-- follow us column -->
+				<section class="col-footer">
+					<h4>FOLLOW US</h4>
+					<div class="social-media">
+						<a href="https://www.facebook.com" alt="Facebook" title="Follow us on Facebook" target="_blank">
+							<i class="fa fa-facebook"></i>
+						</a>			
+						<a href="https://www.youtube.com" alt="youtube" title="Follow us on Youtube" target="_blank">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a href="https://www.twitter.com" alt="Twitter" title="Follow us on Twitter" target="_blank">				
+							<i class="fa fa-twitter"></i>					
+						</a>
+					</div>				
+				</section>
+				<!-- address column -->
+				<section class="col-footer company-info">
+					<h4>ADDRESS</h4>
+					<address>
+						<p>1385 Woodroffe Ave,</p><br>
+						<p>Nepean, ON K2G 1V8</p><br>
+						<p>Canada</p>
+					</address>
+				</section>
+			</div>
+		</footer>
+		<!-- footer content ends -->
+	</div>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+
 </body>
 </html>
