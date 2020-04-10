@@ -105,7 +105,6 @@ h4 {
   border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 
@@ -327,23 +326,14 @@ button:hover {
 .contact-card-envelope {
 	margin-top: 10px;	
 	text-align: center;
-	color: #6babaa;
 }
 
 .contact-card-envelope .fa {
-	/*border-radius: 2px;
-    color: #fff;
-    height: 30px;
-    line-height: 30px;
-    margin: auto 1px;
-    width: 30px;
-    	font-size: 12px;
-		border-radius: 2px;
-		border: 1px solid green;
-		padding: 2px;
-		background-color: green;
-		color: white;
-		color: #6babaa;	*/   
+	color: #6babaa;
+}
+
+.fa:hover {	
+	transform: scale(1.1);
 }
 
 /*.contact-card-envelope img {
@@ -407,31 +397,13 @@ button:hover {
     background-color: #55acee; 
 }
 
-.social-media .fa:hover {
-	-webkit-transform: scale(1.1) rotate(360deg);
-	-moz-transform: scale(1.1) rotate(360deg);
-	-ms-transform: scale(1.1) rotate(360deg);
-	-o-transform: scale(1.1) rotate(360deg);
-	transform: scale(1.1) rotate(360deg);
-   /* -webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;    */
-}
-
 @keyframes spin {
 	from {
 		transform: rotate(0deg);
 	}
 	to {
-		transform: rotate(180deg);
+		transform: rotate(360deg);
 	}
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
 }
 
 /*This media query will only target the tablet size*/
@@ -502,8 +474,7 @@ button:hover {
 		margin: 0 1%;
 		padding: 10px;
 		float: left;
-	}
-	
+	}	
 }
 
 
