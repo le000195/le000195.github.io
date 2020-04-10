@@ -71,7 +71,7 @@ function createTableFromJSON() {
                 "THURSDAY": "Subject Analysis",
                 "FRIDAY": "Internet App" 
             }
-        ]
+        ];
 
         // Extract value for HTML header('TIME', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', and 'FRIDAY')
         var col = [];
@@ -89,18 +89,18 @@ function createTableFromJSON() {
         // Create HTML table header row
         var tr = table.insertRow(-1);                  
 
-        for (var i = 0; i < col.length; i++) {
+        for (var j = 0; j < col.length; j++) {
             var th = document.createElement("th");      
-            th.innerHTML = col[i];
+            th.innerHTML = col[j];
             tr.appendChild(th);
         }
 
         // Add JSON data to the schedule table        
-        for (var i = 0; i < mySchedule.length; i++) {
+        for (var m = 0; m < mySchedule.length; m++) {
             tr = table.insertRow(-1);
-            for (var j = 0; j < col.length; j++) {			
+            for (var n = 0; n < col.length; n++) {			
                 var tabCell = tr.insertCell(-1);                
-                tabCell.innerHTML = mySchedule[i][col[j]];
+                tabCell.innerHTML = mySchedule[m][col[n]];
             }
         }
 
