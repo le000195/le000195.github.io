@@ -1,33 +1,19 @@
-
-//Preloader
-$(document).ready(function() {
-
-    var myVar;  
-    
-    preloaderFadeOutTime = 500;
-
-    function hidePreloader() {
-        var preloader = $('.spinner-wrapper');
-        preloader.fadeOut(preloaderFadeOutTime);
-    }
-
-    hidePreloader();
-    //load webpage after running animation for 2s
-    myVar = setTimeout(showPage, 1000);    
-});
-
 window.onload = init;
 
-function init() {   
-        
-        //create schedule table
-         createTableFromJSON();
+function init() { 
 
-         //assign default values for contact card info
-         createDefaultProfile();
+        //load webpage after running the animation for 2s
+        var myVar;        
+        myVar = setTimeout(showPage, 2000);  
+
+        //create schedule table
+        createTableFromJSON();
+
+        //assign default values for contact card info
+        createDefaultProfile();
         
-         //Display inputted profile information on Contact Card
-         $('#form').submit(function (e) {        
+        //Display inputted profile information on Contact Card
+        $('#form').submit(function (e) {        
             e.preventDefault();
             $("#contact-card-info").removeClass('reveal');
             var form = this;
@@ -35,15 +21,15 @@ function init() {
             $("#contact-card-info").addClass('reveal');
     }); 	
 
-         document.querySelector('.mobile-nav-shortcut').onclick = showHideMobileMenu;
+        document.querySelector('.mobile-nav-shortcut').onclick = showHideMobileMenu;
 
-         window.addEventListener("resize", hideMobileMenu);   
+        window.addEventListener("resize", hideMobileMenu);   
 }
 
-//load webpage
 function showPage() {
-          document.getElementById("animation-loader").style.display = "none";
-          document.getElementById("my-site").style.display = "block";
+        document.getElementById("animation-loader").style.display = "none";
+        document.getElementById("animation-wrapper").style.display = "none";
+        document.getElementById("my-site").style.display = "block";          
 }
 
 //create schedule table
@@ -130,28 +116,28 @@ function createDefaultProfile() {
 
  //Display inputted profile information on Contact Card
 function showformValues(form) {   
-    var formValues = $(form).serializeArray();
-    
-    $("#contact-card-info").find("#name_result").text(formValues[0].value);
-     $("#contact-card-info").find("#email_result").text(formValues[1].value);
-    $("#contact-card-info").find("#addr1_result").text(formValues[2].value+", "+formValues[3].value+",");
-    $("#contact-card-info").find("#addr2_result").text(formValues[4].value+", "+formValues[5].value);
-}
+        var formValues = $(form).serializeArray();
+        
+        $("#contact-card-info").find("#name_result").text(formValues[0].value);
+         $("#contact-card-info").find("#email_result").text(formValues[1].value);
+        $("#contact-card-info").find("#addr1_result").text(formValues[2].value+", "+formValues[3].value+",");
+        $("#contact-card-info").find("#addr2_result").text(formValues[4].value+", "+formValues[5].value);
+    }
 
 function showHideMobileMenu() {
 
-    var mobileNav = document.querySelector('.mobile-nav');
+        var mobileNav = document.querySelector('.mobile-nav');
 
-    if(mobileNav.style.display=="block") {
-        mobileNav.style.display="none";
-    } else {
-        mobileNav.style.display="block";
-    }
+        if(mobileNav.style.display=="block") {
+            mobileNav.style.display="none";
+        } else {
+            mobileNav.style.display="block";
+        }
 }
 
 function hideMobileMenu() {
 
-    var mobileNav = document.querySelector('.mobile-nav');
-    
-    mobileNav.style.display="none";
+        var mobileNav = document.querySelector('.mobile-nav');
+        
+        mobileNav.style.display="none";
 }
