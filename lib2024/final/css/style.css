@@ -159,13 +159,11 @@ h4 {
 	content: "";
 	display:block;
 	position: absolute;
-	background: black;
 }
 
 .mobile-nav-shortcut:after {
 	content: "";
 	display: block;
-	background: black;
 	position: absolute;
 	bottom: 0;
 }
