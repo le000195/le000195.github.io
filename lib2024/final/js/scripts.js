@@ -1,15 +1,25 @@
+
+//Preloader
+$(document).ready(function() {
+
+    var myVar;  
+    
+    preloaderFadeOutTime = 500;
+
+    function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+    }
+
+    hidePreloader();
+    //load webpage after running animation for 2s
+    myVar = setTimeout(showPage, 1000);    
+});
+
 window.onload = init;
 
 function init() {   
-        var myVar;	
-
-        //load animation first for 2s
-        document.getElementById("animation-loader").style.display = "block";
-        document.getElementById("my-site").style.display = "none";
-
-        //load webpage after running animation for 2s
-        myVar = setTimeout(showPage, 2000);
-
+        
         //create schedule table
          createTableFromJSON();
 
