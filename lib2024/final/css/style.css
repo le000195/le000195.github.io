@@ -302,7 +302,7 @@ button:hover {
 
 .contact-card {	
 	max-width: 95%;
-	margin: 10px;
+	margin: 10px auto;
 }
 
 .contact-card-detail {
