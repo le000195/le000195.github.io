@@ -121,18 +121,17 @@ h4 {
 	border: 16px solid #f3f3f3;
 	border-radius: 50%;
 	border-top: 16px solid #3498db;
-	width: 120px;
-	height: 120px;
 	animation: spin 2s linear infinite;
 }
 
-/*webpage styles */
+/*webpage styles*/
+/*header styles*/
 .header-container, .main-container, .footer-container {
 	width:100%;	
 	max-width: 450px;
 	margin: 0 auto;
 }
-/*header styles*/
+
 .header-container {  	
   	font-family: 'Merriweather', sans-serif;	  	
 }

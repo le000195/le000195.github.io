@@ -91,18 +91,18 @@
 				<div class="main-profile-detail" id="main-profile-detail">
 					<form id="form" action="submit.php" method="post">
 						<table>
-							<tbody>                        
-	                   			<tr>
-		                   			<!-- Name (text) -->                            
+							<tbody>
+								<!-- Name (text) -->                            
+	                   			<tr>		                   			                        
 		                      	 	<td>
 		                      	 		<label for="name">Name </label>
 		                      	 	</td>
 		                      	 	<td>
 		                      	 		<input type="text" name="name" id="name" placeholder="Name goes here" required>
 		                      	 	</td>
-		                      	 </tr>
-		                      	 <tr>
-									<!-- Email (email)-->
+		                      	</tr>		                      	
+								<!-- Email (email)-->
+		                      	<tr>
 									<td>
 										<label for="email">Email </label>
 									</td>
@@ -110,8 +110,8 @@
 										<input type="email" name="email" id="email" placeholder="Enter your email here" required>
 									</td>
 								</tr>
-								<tr>																		
-									<!-- Address (Text) -->
+								<!-- Address (Text) -->
+								<tr>	
 									<td>
 										<label for="addr">Address </label>
 									</td>
@@ -119,8 +119,8 @@
 										<input type="text" name="addr" id="addr" placeholder="Enter your address here" required>
 									</td>
 								</tr>
+								<!-- City (Text) -->
 								<tr>
-									<!-- City (Text) -->
 									<td>
 										<label for="city">City</label>
 									</td>
@@ -128,8 +128,8 @@
 										<input type="text" name="city" id="city" placeholder="Enter your city here" required>
 									</td>
 								</tr>
-								<tr>
-									<!-- Province (Drop-down) -->		
+								<!-- Province (Drop-down) -->	
+								<tr>	
 									<td>
 										<label for="prov">Province </label>
 									</td>
@@ -148,9 +148,9 @@
 											<option value="SK">Saskatchewan</option>						
 										</select>
 									</td>
-								</tr>
-								<tr>							
-									<!-- Postal Code (Text) -->
+								</tr>					
+								<!-- Postal Code (Text) -->
+								<tr>	
 									<td>
 										<label for="pc">Postal Code</label>
 									</td>
@@ -158,7 +158,8 @@
 										<input type="text" name="pc" id="pc" placeholder="A0A 0A0" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
 									</td>													
 								</tr>
-							</tbody>
+							</tbody>													
+							<!-- Submit button -->
 							<tfoot>
 								<tr>
 									<td colspan="2">

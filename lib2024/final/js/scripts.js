@@ -6,10 +6,10 @@ function init() {
         var myVar;        
         myVar = setTimeout(showPage, 2000);  
 
-        //create schedule table
+        //create schedule using JSON table
         createTableFromJSON();
 
-        //assign default values for contact card info
+        //assign default values of contact card info for first time loading 
         createDefaultProfile();
         
         //Display inputted profile information on Contact Card
@@ -20,12 +20,14 @@ function init() {
             showformValues(form);
             $("#contact-card-info").addClass('reveal');
     }); 	
-
+        //show or hide mobile menu 
         document.querySelector('.mobile-nav-shortcut').onclick = showHideMobileMenu;
 
+        //if the mobile menu is being shown, then hide it upon resizing the browser window 
         window.addEventListener("resize", hideMobileMenu);   
 }
 
+//load the webpage
 function showPage() {
         document.getElementById("animation-loader").style.display = "none";
         document.getElementById("animation-wrapper").style.display = "none";
@@ -124,6 +126,7 @@ function showformValues(form) {
         $("#contact-card-info").find("#addr2_result").text(formValues[4].value+", "+formValues[5].value);
     }
 
+//show or hide the mobile menu
 function showHideMobileMenu() {
 
         var mobileNav = document.querySelector('.mobile-nav');
