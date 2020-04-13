@@ -106,7 +106,7 @@ function createTableFromJSON() {
         var divContainer = document.getElementById("json_table");
         divContainer.innerHTML = "";
         divContainer.appendChild(table);
-    }
+}
 
 //assign default values for contact card info
 function createDefaultProfile() {
@@ -114,17 +114,17 @@ function createDefaultProfile() {
         $("#contact-card-info").find("#email_result").text("JohnDoe@algonquincollege.com");
         $("#contact-card-info").find("#addr1_result").text("1385 Woodroffe Ave, Nepean,");
         $("#contact-card-info").find("#addr2_result").text("ON, K2G 1V8");
-    }
+}
 
  //Display inputted profile information on Contact Card
 function showformValues(form) {   
         var formValues = $(form).serializeArray();
         
         $("#contact-card-info").find("#name_result").text(formValues[0].value);
-         $("#contact-card-info").find("#email_result").text(formValues[1].value);
+        $("#contact-card-info").find("#email_result").text(formValues[1].value);
         $("#contact-card-info").find("#addr1_result").text(formValues[2].value+", "+formValues[3].value+",");
         $("#contact-card-info").find("#addr2_result").text(formValues[4].value+", "+formValues[5].value);
-    }
+}
 
 //show or hide the mobile menu
 function showHideMobileMenu() {
