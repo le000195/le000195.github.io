@@ -128,7 +128,6 @@ h4 {
 	max-width: 450px;
 	margin: 0 auto;
 }
-
 /*header styles*/
 .header-container {  	
   	font-family: 'Merriweather', sans-serif;	  	
@@ -407,7 +406,6 @@ button:hover {
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	.header-container, .main-container, .footer-container {
 		max-width: 750px;
-		margin: auto;
 	}
 
 }
